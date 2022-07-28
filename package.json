@@ -1,14 +1,16 @@
 {
-  "name": "lex62",
-  "version": "1.0.2",
+  "name": "lex62ts",
+  "version": "1.0.0",
   "description": "Fast, lexicographic base62 encode and decode",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "istanbul cover _mocha ./test && istanbul --text check-coverage --statements 100 --functions 100 --branches 100 --lines 100"
+    "test": "tap --ts",
+    "build": "tsc -b"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tjmehta/lex62.git"
+    "url": "git+https://github.com/nkoehring/lex62ts.git"
   },
   "keywords": [
     "base62",
@@ -30,21 +32,24 @@
     "base",
     "base10",
     "62",
-    "10"
+    "10",
+    "typescript"
   ],
-  "author": "Tejesh Mehta",
+  "authors": [
+    "Norman Köhring",
+    "Tejesh Mehta"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tjmehta/lex62/issues"
+    "url": "https://github.com/nkoehring/lex62ts/issues"
   },
-  "homepage": "https://github.com/tjmehta/lex62#readme",
+  "homepage": "https://github.com/nkoehring/lex62ts#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "istanbul": "^0.4.4",
-    "mocha": "^3.0.2"
+    "@types/node": "^18.6.2",
+    "@types/tap": "^15.0.7",
+    "tap": "^16.3.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
   },
-  "dependencies": {
-    "101": "^1.6.1",
-    "is-positive-integer": "^1.1.1"
-  }
+  "dependencies": {}
 }
