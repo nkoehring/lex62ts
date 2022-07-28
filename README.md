@@ -18,7 +18,7 @@ yarn add -D lex62ts
 
 # Typescript
 
-This library is written in and therefore fully supports Typescript. The commonjs module is compiled for and tested with Node16.
+This library is written in and therefore fully supports Typescript. The commonjs module is compiled for Node16 and tested with Node14, 16 and 18.
 
 # Usage
 ##### encode
