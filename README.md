@@ -1,4 +1,4 @@
-# lex62 [![Build Status](https://travis-ci.org/tjmehta/lex62.svg?branch=master)](https://travis-ci.org/tjmehta/lex62) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
+# lex62ts ![Build Status](https://github.com/nkoehring/lex62ts/actions/workflows/ci.yml/badge.svg) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
 Fast, [lexicographic](https://en.wikipedia.org/wiki/Lexicographical_order) base62 encode and decode
 
 # Installation
