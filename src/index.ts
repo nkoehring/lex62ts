@@ -14,7 +14,7 @@ function getPrefix (len: number, method: 'encode' | 'decode'): string {
 }
 
 export function encode (base10: number): string {
-  if (!Number.isSafeInteger(base10)) throw new Error('encode: invalid number (not a safe integer)')
+  if (!Number.isInteger(base10)) throw new Error('encode: invalid number (not an integer)')
   if (base10 < 0) throw new Error('encode: unsupported number (must be a positive integer or zero)')
 
   let result = base10 === 0 ? '0' : ''

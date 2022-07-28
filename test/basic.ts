@@ -31,13 +31,11 @@ tap.test('lex62', t => {
         1.1,
         1e90
       ]
-      const invalidNumberError = new Error('encode: invalid number (not a safe integer)')
-      const unsupportedNumberError = new Error('encode: unsupported number (must be a positive integer or zero)')
       const expectedErrors = [
-        invalidNumberError,
-        unsupportedNumberError,
-        invalidNumberError,
-        invalidNumberError,
+        new Error('encode: invalid number (not an integer)'),
+        new Error('encode: unsupported number (must be a positive integer or zero)'),
+        new Error('encode: invalid number (not an integer)'),
+        new Error('encode: unsupported number (too large)'),
       ]
 
       invalidBase10.forEach((value, index) => {

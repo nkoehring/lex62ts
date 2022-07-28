@@ -40,11 +40,11 @@ encode(238327) // 'Czzz'
 
 // errors
 encode('yo')
-// throws [Error: 'encode: invalid number (not a safe integer)']
+// throws [Error: 'encode: invalid number (not an integer)']
 encode(-10)
 // throws [Error: 'encode: unsupported number (must be a positive integer or zero)']
 encode(1e90)
-// throws [Error: 'encode: invalid number (not a safe integer)']
+// throws [Error: 'encode: unsupported number (too large)']
 ```
 
 ##### decode
